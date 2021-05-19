@@ -1,0 +1,113 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Universal
+2. Body
+3. Text
+4. Buttons
+5. Container
+6. Card
+7. Media Queries
+
+
+*/
+
+/*----------------------------------1. Universal----*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*---------------------------------------2. Body----*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1502px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background: #f2f2f2;
+}
+
+/*---------------------------------------3. Text----*/
+h2 {
+    margin-bottom: 1.9rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #f2f2f2;
+}
+
+p {
+    margin-bottom: 1.6rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/*------------------------------------4. Buttons----*/
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    border: 2px solid #f2f2f2;
+    transition: all 0.25s linear;
+    background: #f2f2f2;
+    color: #e38826;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #f2f2f2;
+}
+
+.btn--cyan {
+    color: #006970;
+}
+
+.btn--dark-cyan {
+    color: #004241;
+}
+
+/*----------------------------------5. Container----*/
+.container {
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/*---------------------------------------6. Card----*/
+.card {
+    max-width: 327px;
+    padding: 3rem;
+    background: #e38826;
+}
+
+.card--cyan {
+    background: #006970;
+}
+
+.card--dark-cyan {
+    background: #004241;
+}
+
+.card-img {
+    margin-bottom: 2.5rem;
+}
+
+/*------------------------------7. Media Queries----*/
+@media screen and (min-width: 1029px) {
+    body {
+        height: 800px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    p {
+        margin-bottom: 5rem;
+    }
+}
